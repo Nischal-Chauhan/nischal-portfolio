@@ -216,7 +216,33 @@ export const portfolio: PortfolioData = {
   },
 ],
 
-  certifications: [],
+  certifications: [
+  {
+    title: "Deep Learning Workshop",
+    issuer: "MNIT Jaipur",
+    year: "2025",
+  },
+    {
+    title: "ISRO Certification",
+    issuer: "Indian Space Research Organisation (ISRO)",
+    year: "2024",
+  },
+  {
+    title: "Machine Learning & Artificial Intelligence",
+    issuer: "MNIT Jaipur",
+    year: "2024",
+  },
+  {
+    title: "Advanced Microsoft Excel",
+    issuer: "Microsoft",
+    year: "2024",
+  },
+  {
+    title: "Course on Computer Concepts (CCC)",
+    issuer: "NIELIT",
+    year: "2018",
+  },
+],
 
   contact: {
     email: "chauhannischal311@gmail.com",
