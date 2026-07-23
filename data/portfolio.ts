@@ -199,7 +199,7 @@ export const portfolio: PortfolioData = {
       "Tailwind CSS",
       "Framer Motion",
     ],
-    image: "/projects/placeholder.png",
+    image: "/projects/portfolio.png",
   },
 ],
 
