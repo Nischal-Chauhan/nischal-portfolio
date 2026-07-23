@@ -1,7 +1,9 @@
 "use client";
 
 import Link from "next/link";
+
 import { portfolio } from "@/data/portfolio";
+
 import Button from "@/components/ui/Button";
 import Container from "@/components/ui/Container";
 
@@ -33,7 +35,12 @@ export default function Navbar() {
 
           {/* Resume Button */}
           <div className="hidden lg:block">
-            <Button>
+            <Button
+              href={portfolio.hero.resume}
+              target="_blank"
+              rel="noopener noreferrer"
+              download
+            >
               Resume
             </Button>
           </div>

@@ -30,15 +30,13 @@ export default function Hero() {
           </p>
 
           <div className="mt-10 flex flex-wrap justify-center gap-4 lg:justify-start">
-            <a
-              href={portfolio.hero.resume}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button>
-                Download Resume
-              </Button>
-            </a>
+            <Button
+  href={portfolio.hero.resume}
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  Download Resume
+</Button>
 
             <a href="#contact">
               <Button variant="secondary">
