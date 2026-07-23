@@ -49,7 +49,7 @@ export default function Hero() {
         <FadeIn delay={0.2}>
           <div className="relative">
             {/* Background Glow */}
-            <div className="absolute inset-0 rounded-full bg-cyan-500/20 blur-3xl" />
+            <div className="absolute inset-0 rounded-full bg-cyan-500/20 blur-3xl [transform:translateZ(0)] [will-change:transform] [-webkit-backface-visibility:hidden] [backface-visibility:hidden]" />
 
             <Image
               src="/images/profile.jpeg"
