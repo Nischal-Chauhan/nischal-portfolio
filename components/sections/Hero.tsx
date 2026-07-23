@@ -12,36 +12,42 @@ export default function Hero() {
   return (
     <section className="flex min-h-screen items-center overflow-hidden">
       <Container className="flex flex-col items-center justify-between gap-16 pt-24 lg:flex-row">
-        {/* Left Side */}
         <FadeIn className="max-w-2xl text-center lg:text-left">
           <p className="mb-4 text-sm font-medium uppercase tracking-[0.2em] text-cyan-400">
             Hello, I&apos;m
           </p>
 
           <h1 className="text-5xl font-bold leading-tight sm:text-6xl lg:text-7xl">
-            {portfolio.name}
+            {portfolio.hero.name}
           </h1>
 
           <h2 className="mt-6 text-2xl font-medium text-zinc-300 sm:text-3xl">
-            {portfolio.role}
+            {portfolio.hero.role}
           </h2>
 
           <p className="mt-8 max-w-xl text-lg leading-8 text-zinc-400">
-            {portfolio.tagline}
+            {portfolio.hero.tagline}
           </p>
 
           <div className="mt-10 flex flex-wrap justify-center gap-4 lg:justify-start">
-            <Button>
-              Download Resume
-            </Button>
+            <a
+              href={portfolio.hero.resume}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button>
+                Download Resume
+              </Button>
+            </a>
 
-            <Button variant="secondary">
-              Contact Me
-            </Button>
+            <a href="#contact">
+              <Button variant="secondary">
+                Contact Me
+              </Button>
+            </a>
           </div>
         </FadeIn>
 
-        {/* Right Side */}
         <FadeIn delay={0.2}>
           <div className="relative">
             {/* Background Glow */}
@@ -49,11 +55,11 @@ export default function Hero() {
 
             <Image
               src="/images/profile.jpeg"
-              alt="Nischal Chauhan"
+              alt={portfolio.hero.name}
               width={450}
               height={600}
               priority
-              className="relative rounded-3xl object-cover shadow-2xl"
+              className="relative h-auto rounded-3xl object-cover shadow-2xl"
             />
 
             {/* Floating Tech Badges */}

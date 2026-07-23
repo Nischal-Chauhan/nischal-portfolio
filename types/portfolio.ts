@@ -9,6 +9,19 @@ export interface SocialLink {
   icon: string;
 }
 
+export interface Hero {
+  name: string;
+  role: string;
+  tagline: string;
+  resume: string;
+}
+
+export interface About {
+  title: string;
+  description: string;
+  highlights: string[];
+}
+
 export interface SkillCategory {
   title: string;
   skills: string[];
@@ -32,39 +45,43 @@ export interface Project {
   live?: string;
 }
 
-export interface Certification {
-  title: string;
-  issuer: string;
-  year: string;
-}
-
 export interface Education {
   degree: string;
   institute: string;
   duration: string;
 }
 
-export interface PortfolioData {
-  name: string;
-  role: string;
-  tagline: string;
+export interface Certification {
+  title: string;
+  issuer: string;
+  year: string;
+}
+
+export interface Contact {
   email: string;
   phone: string;
   location: string;
-  resume: string;
   linkedin: string;
+}
+
+export interface PortfolioData {
+  hero: Hero;
+
+  about: About;
 
   navigation: NavItem[];
 
   socials: SocialLink[];
 
-  skillCategories: SkillCategory[];
+  skills: SkillCategory[];
 
-  experiences: Experience[];
+  experience: Experience[];
 
   projects: Project[];
 
   education: Education[];
 
   certifications: Certification[];
+
+  contact: Contact;
 }
