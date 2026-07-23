@@ -94,7 +94,55 @@ export const portfolio: PortfolioData = {
   },
 ],
 
-  projects: [],
+  projects: [
+  {
+    title: "VisionAttend AI",
+    category: "AI",
+    featured: true,
+    description:
+      "A Smart Face Recognition Attendance & Access Management System built with AI-powered facial recognition, FastAPI, PostgreSQL, Docker, and InsightFace for secure attendance tracking and access control.",
+    technologies: [
+      "Python",
+      "FastAPI",
+      "PostgreSQL",
+      "Docker",
+      "InsightFace",
+      "OpenCV",
+    ],
+    image: "/projects/placeholder.png",
+  },
+
+  {
+    title: "AI Resume ATS Analyzer",
+    category: "AI",
+    featured: true,
+    description:
+      "An AI-powered resume analyzer that evaluates resumes against job descriptions using Google's Gemini AI and provides ATS scores, keyword analysis, and improvement suggestions.",
+    technologies: [
+      "Python",
+      "Streamlit",
+      "Gemini AI",
+      "Docker",
+      "PDF",
+    ],
+    image: "/projects/placeholder.png",
+  },
+
+  {
+    title: "Personal Portfolio",
+    category: "Web",
+    featured: false,
+    description:
+      "A modern portfolio website showcasing my experience, projects, and technical skills, built with Next.js, TypeScript, and Tailwind CSS.",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Framer Motion",
+    ],
+    image: "/projects/placeholder.png",
+  },
+],
 
   education: [],
 
