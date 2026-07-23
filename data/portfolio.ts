@@ -64,7 +64,66 @@ export const portfolio: PortfolioData = {
     },
   ],
 
-  skills: [],
+  skills: [
+  {
+    title: "Programming Languages",
+    skills: [
+      "Python",
+      "JavaScript",
+      "TypeScript",
+      "HTML",
+      "CSS",
+    ],
+  },
+  {
+    title: "Backend Development",
+    skills: [
+      "FastAPI",
+      "Flask",
+      "REST APIs",
+      "PostgreSQL",
+      "SQLAlchemy",
+    ],
+  },
+  {
+    title: "AI & Machine Learning",
+    skills: [
+      "Machine Learning",
+      "Deep Learning",
+      "TensorFlow",
+      "PyTorch",
+      "Scikit-learn",
+      "OpenCV",
+      "Generative AI",
+      "NLP",
+      "Computer Vision",
+    ],
+  },
+  {
+    title: "DevOps & Cloud",
+    skills: [
+      "Docker",
+      "Linux",
+      "Nginx",
+      "Apache",
+      "Git",
+      "GitHub",
+      "AWS",
+      "PM2",
+      "CI/CD",
+    ],
+  },
+  {
+    title: "Tools & Technologies",
+    skills: [
+      "VS Code",
+      "Postman",
+      "Figma",
+      "WordPress",
+      "Excel",
+    ],
+  },
+],
 
   experience: [
   {
@@ -144,7 +203,18 @@ export const portfolio: PortfolioData = {
   },
 ],
 
-  education: [],
+  education: [
+  {
+    degree: "Bachelor of Technology (B.Tech)",
+    institute: "Silver Oak University",
+    duration: "2021 – 2025",
+  },
+  {
+    degree: "Diploma in Engineering",
+    institute: "Khyati School of Engineering",
+    duration: "2018 – 2021",
+  },
+],
 
   certifications: [],
 
